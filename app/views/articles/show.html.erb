@@ -15,3 +15,6 @@
 <p>
   Content: <%= @article.content %>
 </p>
+
+<%= link_to "Edit this article", edit_article_path(@article) %> |
+<%= link_to "Back to articles listing page", articles_path %>
