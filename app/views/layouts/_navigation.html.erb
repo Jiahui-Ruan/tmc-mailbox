@@ -10,8 +10,18 @@
       <ul class="nav navbar-nav">
         <li><span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776;</span></li>
       </ul>
-      
+      <!--<form class="navbar-form navbar-left">-->
+      <!--  <div class="form-group">-->
+      <!--    <input type="text" class="form-control" placeholder="Search">-->
+      <!--  </div>-->
+      <!--  <button type="submit" class="btn btn-default">Submit</button>-->
+      <!--</form>-->
+      <ul class="nav navbar-nav">
+        
+      </ul>
       <ul class="nav navbar-nav navbar-right">
+        <li><%= link_to '<span class="glyphicon glyphicon-envelope"></span>'.html_safe, articles_path %></li>
+        <li><%= link_to '<span class="glyphicon glyphicon-search"></span>'.html_safe, '#' %></li>
         <li><%= link_to '<span class="glyphicon glyphicon-pencil"></span>'.html_safe, new_article_path %></li>
       </ul>
     </div><!-- /.navbar-collapse -->
@@ -19,11 +29,11 @@
 </nav>
 
 <div id="mySidenav" class="sidenav">
-  <%= link_to "Home", root_path %>
-  <%= link_to "Articles", articles_path %>
-  <a href="#">Archieve</a>
-  <a href="#">Drafts</a>
-  <a href="#">Junk</a>
+  <%= link_to '<span class="glyphicon glyphicon-home"></span> Home'.html_safe, root_path %>
+  <%= link_to '<span class="glyphicon glyphicon-envelope"></span> Articles'.html_safe, articles_path %>
+  <a href="#"><span class="glyphicon glyphicon-folder-open"></span> Archieve</a>
+  <a href="#"><span class="glyphicon glyphicon-bookmark"></span> Drafts</a>
+  <a href="#"><span class="glyphicon glyphicon-trash"></span> Junk</a>
 </div>
 
 <script>
