@@ -3,6 +3,11 @@ $navbar-default-bg: black;
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+body { 
+  padding-top: 70px;
+  background-color: #fff;
+}
+
 .navbar-brand {
     position: absolute;
     width: 100%;
@@ -35,12 +40,8 @@ $navbar-default-bg: black;
   height: 400px;
 }
 
-.jumbotron h1 {
-  color: #fff;
-  text-align: center;
+#sign-up-btn {
   margin-top: -20px;
-  letter-spacing: -1px;
-  font-weight: bold;
 }
 
 .btn-xlarge {
@@ -75,6 +76,7 @@ $navbar-default-bg: black;
 }
 
 footer {
+  float: right;
   margin-top: 45px;
   padding-top: 5px;
   border-top: 1px solid #eaeaea;
