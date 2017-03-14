@@ -1,16 +1,16 @@
 <h2 align="center">Title: <%= @article.title %></h2>
 
-<div class="well col-xs-8 col-xs-offset-2">
-  <h4 class="name-in-block"><strong>Sender:</strong> <%= @article.sender %></h4>
-  <h4 class="name-in-block"><strong>Receiver:</strong> <%= @article.receiver %></h4>
-  <h4 class="description"><strong>Content:</strong></h4>
+<div class="well well-lg col-xs-8 col-xs-offset-2">
+  <p class="name-in-block"><strong>From:</strong> <%= @article.sender %></p>
+  <p class="name-in-block"><strong>To:</strong> <%= @article.receiver %></p>
+  <p class="description"><strong>Content:</strong></p>
   <hr>
   <%= simple_format(@article.content) %>
   <div class="article-actions">
-    <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-xs btn-primary" %>
+    <%= link_to "Edit this article", edit_article_path(@article), class: "btn btn-md btn-primary" %>
     <%= link_to "Delete this article", article_path(@article), method: :delete, 
                                 data: { confirm: "Are you sure you want to delete the article?"}, 
-                                class: "btn btn-xs btn-danger" %>
-    <%= link_to "View all articles", articles_path, class: "btn btn-xs btn-success" %>
+                                class: "btn btn-md btn-danger" %>
+    <%= link_to "View all articles", articles_path, class: "btn btn-md btn-success" %>
   </div>
 </div>

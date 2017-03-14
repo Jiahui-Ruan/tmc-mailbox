@@ -18,8 +18,9 @@ body {
 }
 
 #logo {
+  margin-top: 15px;
   float: left;
-  font-size: 2em;
+  font-size: 3em;
   letter-spacing: -1px;
   font-weight: bold;
   color: #fff;
@@ -56,14 +57,25 @@ body {
 }
 
 .article-title {
+  border-bottom: 1px solid #eaeaea;
   font-weight: bold;
   font-size: 1.5em;
+}
+
+.article-title-font {
+  color: black;
+  letter-spacing: -1px;
 }
 
 .article-body {
   border-top: 1px solid #eaeaea;
   padding-top: 15px;
   padding-bottom: 15px;
+  color: #B6ACAC;
+}
+
+.well-lg {
+  font-size: 30px;
 }
 
 .name-in-block {
@@ -73,6 +85,14 @@ body {
 
 .description {
   margin-top: 0;
+}
+
+.form-horizontal {
+  font-size: 25px;
+}
+
+.form-control {
+  margin-top: 10px;
 }
 
 footer {
@@ -106,7 +126,7 @@ footer ul li {
     width: 0;
     position: fixed;
     z-index: 1;
-    top: 0;
+    top: 60px;
     left: 0;
     background-color: #111;
     overflow-x: hidden;
@@ -117,7 +137,7 @@ footer ul li {
 .sidenav a {
     padding: 8px 8px 8px 32px;
     text-decoration: none;
-    font-size: 25px;
+    font-size: 35px;
     color: #818181;
     display: block;
     transition: 0.3s
@@ -125,14 +145,6 @@ footer ul li {
 
 .sidenav a:hover, .offcanvas a:focus{
     color: #f1f1f1;
-}
-
-.sidenav .closebtn {
-    position: absolute;
-    top: 0;
-    right: 25px;
-    font-size: 36px;
-    margin-left: 50px;
 }
 
 @media screen and (max-height: 450px) {
